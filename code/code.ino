@@ -1,14 +1,20 @@
 #include <SoftwareSerial.h>
 
+// + [5v]
+// D [10]
+// P [9]
+// R [8]
+// - [GND]
+
 #define CALLER_ID_RX 10
-#define CaLLER_ID_TX 11
+#define CALLER_ID_TX 11
 
 #define RING_DET_PIN 8
 #define CLI_PWDN_PIN 9
 
-#define MDMF_HEADER 0x80
+#define MDMF_HEADER     0x80
 #define MDMF_PARAM_TIME 0x01
-#define MDMF_PARAM_CID 0x02
+#define MDMF_PARAM_CID  0x02
 #define MDMF_PARAM_NAME 0x07
 
 enum CID_STATE { CID_IDLE,
@@ -20,7 +26,7 @@ enum CID_MSG_STATE { CIDMSG_HEADER,
                      CIDMSG_LEN,
                      CIDMSG_DATA };
 
-SoftwareSerial callerID(CALLER_ID_RX, CaLLER_ID_TX);
+SoftwareSerial callerID(CALLER_ID_RX, CALLER_ID_TX);
 
 enum CID_STATE cidState;
 enum CID_MSG_STATE cidMsg;
