@@ -9,6 +9,26 @@ Board | Preview
 -----|-----
 ![](images/board.png)|![](images/preview.png)
 
+## Package example
+
+```
+INCOMING CALL
+MDMF PACKET
+ MSG HEADER: 1
+ MSG LEN: 8
+ MSG END 07050400
+Jul0504:00
+ MSG HEADER: 2
+ MSG LEN: 9
+ MSG END 055857857
+055857857
+ MSG HEADER: 7
+ MSG LEN: E
+ MSG END Bosko Pet
+Bosko Pet
+MDMF PACKET END
+````
+
 ## Sponsorship
 
 ![PCBWay_logo](images/pcbway_logo.png)
