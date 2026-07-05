@@ -46,7 +46,7 @@ void setup() {
   pinMode(RING_DET_PIN, INPUT);
   pinMode(CLI_PWDN_PIN, OUTPUT);
   pinMode(CALLER_ID_RX, INPUT);
-  pinMode(CaLLER_ID_TX, OUTPUT);
+  pinMode(CALLER_ID_TX, OUTPUT);
 
   digitalWrite(CLI_PWDN_PIN, HIGH);
 
